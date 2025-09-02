@@ -14,6 +14,6 @@ A simple Python Web API built with [FastAPI](https://fastapi.tiangolo.com/) that
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/dice-api.git
+git clone https://github.com/devkkartik/dice-api.git
 cd dice-api
 ```
