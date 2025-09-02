@@ -17,3 +17,13 @@ A simple Python Web API built with [FastAPI](https://fastapi.tiangolo.com/) that
 git clone https://github.com/devkkartik/dice-api.git
 cd dice-api
 ```
+
+---
+
+## 🐳 Run with Docker
+
+### 1. Build image
+
+```bash
+docker build -t dice-api:latest .
+```
