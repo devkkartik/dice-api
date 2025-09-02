@@ -1,0 +1,17 @@
+# Ignore virtual environments
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore local config
+.env
+*.log
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore Docker artifacts
+*.pid
+*.sock
