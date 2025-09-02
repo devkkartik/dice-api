@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dice-api-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dice-api
+  template:
+    metadata:
+      labels:
+        app: dice-api
+    spec:
+      containers:
+        - name: dice-api
+          image: dice-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
