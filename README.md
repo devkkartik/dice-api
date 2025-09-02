@@ -18,6 +18,26 @@ git clone https://github.com/devkkartik/dice-api.git
 cd dice-api
 ```
 
+### 2. Create virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the server
+
+```bash
+uvicorn main:app --reload
+```
+
 ---
 
 ## 🐳 Run with Docker
