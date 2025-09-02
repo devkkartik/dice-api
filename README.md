@@ -60,6 +60,13 @@ docker run -d -p 8000:8000 --name dice-api-container dice-api:latest
 curl http://localhost:8000/roll
 ```
 
+### 4. Cleanup
+
+```bash
+docker stop dice-api-container
+docker rm dice-api-container
+```
+
 ---
 
 ## 🚀 Deploy on Kubernetes (Minikube)
@@ -99,4 +106,11 @@ minikube service dice-api-service --url
 
 ```bash
 curl http://<URL_FROM_ABOVE>/roll
+```
+
+### 7. Cleanup
+
+```bash
+minikube stop
+minikube delete
 ```
